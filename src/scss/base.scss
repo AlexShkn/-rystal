@@ -1,0 +1,48 @@
+//====================================================================
+
+// Стили spoller
+// @import 'base/spoller';
+
+// Стили tabs
+// @import 'base/modal';
+
+// Стили tabs
+// @import 'base/tabs';
+
+// Стили filterDropdown
+// @import 'base/filterDropdown';
+
+// Стили checkbox
+// @import "base/checkbox";
+
+// Анимация
+// @import 'base/animate';
+
+// Стили input
+@import 'base/input';
+
+//==============================SWIPER=============================
+// Стили slider
+//snipper :slider
+// @import "base/slider";
+
+// Стили gallery
+//snippet: gallery
+// @import "base/gallery";
+//====================================================================
+//====================================================================
+
+// Стили для отзывчивых картинок (IBG)
+// Сниппет (HTML): ibg (div c картинкой и классами)
+// Сниппет (HTML): ibga (a c картинкой и классами)
+// [class*='__image-ibg'] {
+// 	position: relative;
+// 	img {
+// 		position: absolute;
+// 		width: 100%;
+// 		height: 100%;
+// 		top: 0;
+// 		left: 0;
+// 		object-fit: cover;
+// 	}
+// }
