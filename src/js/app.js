@@ -14,7 +14,7 @@ import './components/burger.js'
 //====================================================================
 
 // Header Sticky
-import './components/headerSticky.js'
+// import './components/headerSticky.js'
 //====================================================================
 
 // Dynamic adaptive
