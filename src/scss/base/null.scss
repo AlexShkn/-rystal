@@ -24,6 +24,7 @@ body {
 	min-width: $minWidth;
 }
 body {
+	color: var(--color-main);
 	line-height: 1;
 	font-family: $fontFamily;
 	font-size: $fontSize;

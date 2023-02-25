@@ -12,11 +12,7 @@
 	&__dialog {
 		display: flex;
 		justify-content: center;
-		max-width: 595px;
 		margin: 40px auto;
-		@media (max-width: 630px) {
-			max-width: 530px;
-		}
 	}
 	&__content {
 		position: relative;
@@ -27,9 +23,12 @@
 		text-align: center;
 		border-radius: 10px;
 		filter: drop-shadow(0px 4px 30px rgba(0, 0, 0, 0.25));
-		@media (max-width: 630px) {
+		@media (max-width: $mobile) {
 			width: 90%;
 			padding: 55px 65px 70px;
+		}
+		@media (max-width: $mobileSmall) {
+			padding: 55px 25px 70px;
 		}
 	}
 	&__close {
@@ -46,6 +45,13 @@
 				opacity: 0.9;
 			}
 		}
+		svg.icon {
+			width: 20px;
+			height: 20px;
+			&:hover {
+				fill: var(--color-accent);
+			}
+		}
 	}
 
 	// .modal__title
@@ -53,20 +59,7 @@
 		position: relative;
 		display: inline-block;
 		margin-bottom: 30px;
-		margin-left: 55px;
 		text-align: center;
-		font-weight: 700;
-		font-size: 24px;
-		color: #ffffff;
-		&::before {
-			content: '';
-			position: absolute;
-			width: 30px;
-			height: 27px;
-			left: -55px;
-			top: 50%;
-			transform: translateY(-50%);
-		}
 	}
 }
 
@@ -102,12 +95,10 @@
 		line-height: 19px;
 		color: #424268;
 		padding-left: 17px;
-		height: 53px;
-		&:not(:last-child) {
-			margin-bottom: 21px;
-		}
+		height: 45px;
+
 		&::placeholder {
-			color: #424268;
+			color: #979797;
 		}
 		&:focus {
 			&::placeholder {
@@ -119,13 +110,6 @@
 	// .modal-form__button
 
 	&__button {
-		width: 258px;
-		background: #ffffff;
-		border-radius: 3px;
-		padding: 17px 20px;
-		font-weight: 700;
-		font-size: 16px;
-		line-height: 19px;
 		&:active {
 			transform: scale(0.95);
 			box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);

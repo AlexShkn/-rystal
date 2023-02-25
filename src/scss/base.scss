@@ -1,10 +1,26 @@
 //====================================================================
+// Menu
+@import 'base/menu';
+
+// Стили input
+@import 'base/input';
+
+// Preloader
+@import 'base/preloader';
+
+// Стили checkbox
+// @import "base/checkbox";
+// Стили spollerCustom
+@import 'base/spollerCustom';
+
+// Стили dropdownMini
+@import 'base/dropdownMini';
 
 // Стили spoller
 // @import 'base/spoller';
 
 // Стили tabs
-// @import 'base/modal';
+@import 'base/modal';
 
 // Стили tabs
 // @import 'base/tabs';
@@ -12,14 +28,8 @@
 // Стили filterDropdown
 // @import 'base/filterDropdown';
 
-// Стили checkbox
-// @import "base/checkbox";
-
 // Анимация
 // @import 'base/animate';
-
-// Стили input
-@import 'base/input';
 
 //==============================SWIPER=============================
 // Стили slider

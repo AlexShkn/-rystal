@@ -1,3 +1,10 @@
+window.addEventListener('load', function () {
+	const preloader = document.querySelector('.preloader')
+	setTimeout(function () {
+		preloader.classList.add('preloader_hidden')
+	}, 0)
+})
+
 // Основной файл стилей
 import '../scss/style.scss'
 //====================================================================
@@ -8,6 +15,10 @@ import './components/burger.js'
 
 // Header Sticky
 import './components/headerSticky.js'
+//====================================================================
+
+// Dynamic adaptive
+import './libs/dynamic_adapt.js'
 //====================================================================
 
 // Swiper
@@ -25,20 +36,24 @@ import './components/headerSticky.js'
 // import './components/tabs.js'
 //====================================================================
 
+// DropDownMini
+import './components/dropdownMini.js'
+//====================================================================
+
 //Modal
-// import './components/modal.js'
+import './components/modal.js'
 //====================================================================
 
 //Spoller
 // import './components/spoller.js'
 //====================================================================
 
-//filterDropdown
-// import './components/filterDropdown.js'
+// Spoller Custom
+import './components/spollerCustom.js'
 //====================================================================
 
-// Dynamic adaptive
-// import './libs/dynamic_adapt.js'
+//filterDropdown
+// import './components/filterDropdown.js'
 //====================================================================
 
 // Scrolling Indicator
@@ -90,3 +105,4 @@ function isWebp() {
 }
 
 isWebp()
+//====================================================================

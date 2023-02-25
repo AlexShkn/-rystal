@@ -26,7 +26,7 @@ $mainColor: #2f3131;
 
 $minWidth: 320px;
 $maxWidth: 1920;
-$maxWidthContainer: 1260;
+$maxWidthContainer: 1586;
 $containerPadding: 15;
 
 $pc: ($maxWidthContainer + $containerPadding) + px;
@@ -102,7 +102,8 @@ body._lock {
 }
 
 [class*='__inner-container'] {
-	max-width: 1060px;
+	position: relative;
+	max-width: 1420px;
 	margin: 0 auto;
 	padding: 0 15px;
 }
@@ -115,9 +116,8 @@ body._lock {
 //===========MAIN===============================================
 @import 'footer';
 //</ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>==============
-
+@import './parts/modal-callback';
 //<ОСНОВНОЙ БЛОК>===============================================
-
 @import 'base';
 @import 'global';
 

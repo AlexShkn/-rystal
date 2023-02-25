@@ -46,6 +46,6 @@ const closeModal = () => {
 
 closeModal()
 
-openModal('[data-btn-measuring]', '[data-modal-measuring]')
+openModal('[data-btn-callback]', '[data-modal-callback]')
 
 // openModal('.buttons__button_two', '.modal[data-modal="two"]')

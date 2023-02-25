@@ -1,0 +1,75 @@
+.modal-callback {
+	// .modal-callback__dialog
+
+	&__dialog {
+	}
+
+	// .modal-callback__content
+
+	&__content {
+		display: flex;
+		flex-direction: column;
+		max-width: 450px;
+		background-color: #fff;
+	}
+
+	// .modal-callback__title
+
+	&__title {
+		font-family: 'Open Sans';
+		font-weight: 800;
+		font-size: 24px;
+		line-height: 55px;
+		color: #2f3131;
+		text-transform: uppercase;
+		@media (max-width: $mobileSmall) {
+			font-size: 15px;
+			line-height: 30px;
+		}
+	}
+
+	// .modal-callback__form
+
+	&__form {
+	}
+}
+
+.callback-form {
+	gap: 20px;
+	// .callback-form__field
+
+	&__field {
+	}
+
+	// .callback-form__input
+
+	&__input {
+		width: 100%;
+		border: 1px solid #979797;
+		border-radius: 8px;
+		margin-bottom: 18px;
+	}
+
+	// .callback-form__checkbox
+
+	&__checkbox {
+	}
+
+	// .callback-form__checkbox-text
+
+	&__checkbox-text {
+	}
+
+	// .callback-form__button
+
+	&__button {
+		padding: 15px 0;
+		width: 100%;
+		font-weight: 700;
+		font-size: 14px;
+		line-height: 16px;
+		color: #2f3131;
+		background-color: var(--color-accent);
+		white-space: nowrap;
+	}
+}
