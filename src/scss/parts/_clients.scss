@@ -1,0 +1,102 @@
+.clients {
+	position: relative;
+	background-color: #fff;
+	@include adaptiveValue('padding-top', 150, 40, 1);
+	@include adaptiveValue('padding-bottom', 80, 59, 1);
+
+	// .clients__slider
+
+	&__slider {
+		position: relative;
+		background: #ffffff;
+		border-radius: 3px;
+	}
+
+	// .clients__title
+
+	&__title {
+		@include adaptiveValue('margin-bottom', 60, 25, 1);
+	}
+
+	// .clients__wrapper
+
+	&__wrapper {
+		position: relative;
+	}
+
+	// .clients__pagination
+
+	&__pagination {
+		width: 100%;
+		text-align: center;
+		display: flex;
+		justify-content: center;
+		@include adaptiveValue('gap', 24, 10, 1);
+	}
+}
+
+.clients-slider {
+	background: #ffffff;
+	border-radius: 3px;
+}
+
+.clients-slide {
+	width: auto;
+	display: flex;
+
+	// .clients-slide__img
+
+	&__img {
+		@include adaptiveValue('max-width', 360, 150, 1);
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+}
+
+.clients-slider-buttons {
+	@media (max-width: $mobile) {
+		display: none;
+	}
+}
+
+.clients-slider-btn {
+	display: flex;
+	align-items: center;
+	width: 78px;
+	height: 78px;
+	border-radius: 50%;
+	cursor: pointer;
+	transition: all 0.3s ease 0s;
+	@media (max-width: 600px) {
+		position: static;
+	}
+	svg {
+		path {
+			stroke: #000000;
+		}
+	}
+
+	@media (any-hover: hover) {
+		&:hover {
+			svg {
+				path {
+					stroke: var(--color-main);
+				}
+			}
+		}
+	}
+}
+
+.swiper-button-next {
+	right: -70px;
+	top: 30%;
+}
+.swiper-button-prev {
+	left: -70px;
+	top: 30%;
+	transform: rotate(180deg);
+}

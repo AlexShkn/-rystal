@@ -125,6 +125,15 @@ body._lock {
 	margin: 0 auto;
 	padding: 0 15px;
 }
+[class*='__slider-container'] {
+	position: relative;
+	@include adaptiveValue('max-width', 1130, 300, 1);
+	margin: 0 auto;
+	padding: 0 15px;
+	@media (max-width: $mobile) {
+		max-width: 650px;
+	}
+}
 //</ОСНОВНАЯ СЕТКА>=============================================
 
 //<ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>===============
@@ -135,6 +144,7 @@ body._lock {
 @import './parts/about';
 @import './parts/advantages';
 @import './parts/order';
+@import './parts/clients';
 //===========MAIN===============================================
 @import 'footer';
 //</ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>==============

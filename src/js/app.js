@@ -22,8 +22,8 @@ import './libs/dynamic_adapt.js'
 //====================================================================
 
 // Swiper
-// import './libs/swiper.js'
-// import './components/swiper/slider.js'
+import './libs/swiper.js'
+import './components/swiper/slider.js'
 // import './components/swiper/gallery.js'
 //====================================================================
 
