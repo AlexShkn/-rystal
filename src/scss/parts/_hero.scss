@@ -1,17 +1,14 @@
-.promo {
+.hero {
 	position: relative;
-	background: url('@img/promo/promo-bg.jpg') 100% top / cover no-repeat;
+	background: url('@img/hero/hero-bg.jpg') 100% top / cover no-repeat;
 	min-height: 567px;
 	@include adaptiveValue('min-height', 567, 327, 1);
-	@media (max-width: $mobile) {
-		// background-position-x: left;
-		// object-fit: contain;
-	}
+
 	@media (max-width: $mobileSmall) {
 		background-position: right -200px bottom 20px;
 	}
 
-	// .promo__content
+	// .hero__content
 
 	&__content {
 		display: flex;
@@ -27,7 +24,7 @@
 		}
 	}
 
-	// .promo__caption
+	// .hero__caption
 
 	&__caption {
 		position: relative;
@@ -50,7 +47,7 @@
 		}
 	}
 
-	// .promo__title
+	// .hero__title
 
 	&__title {
 		position: relative;
@@ -73,7 +70,7 @@
 		}
 	}
 
-	// .promo__description
+	// .hero__description
 
 	&__description {
 		position: relative;
@@ -88,7 +85,7 @@
 		}
 	}
 
-	// .promo__button
+	// .hero__button
 
 	&__button {
 		display: none;
@@ -103,7 +100,7 @@
 		}
 	}
 }
-.promo-form {
+.hero-form {
 	flex: 0 0 315px;
 	display: flex;
 	flex-direction: column;
@@ -116,7 +113,7 @@
 		display: none;
 	}
 
-	// .promo-form__body
+	// .hero-form__body
 
 	&__body {
 		display: flex;
@@ -124,7 +121,7 @@
 		gap: 18px;
 	}
 
-	// .promo-form__title
+	// .hero-form__title
 
 	&__title {
 		text-align: center;
@@ -137,12 +134,12 @@
 		color: #2f3131;
 	}
 
-	// .promo-form__field
+	// .hero-form__field
 
 	&__field {
 	}
 
-	// .promo-form__input
+	// .hero-form__input
 
 	&__input {
 		width: 100%;
@@ -160,7 +157,7 @@
 		}
 	}
 
-	// .promo-form__button
+	// .hero-form__button
 
 	&__button {
 		padding: 15px 0;
@@ -172,7 +169,7 @@
 	}
 }
 
-.promo__full-inner-container {
+.hero__full-inner-container {
 	position: relative;
 	max-width: 1420px;
 	margin: 0 auto;

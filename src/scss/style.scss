@@ -118,6 +118,13 @@ body._lock {
 	margin: 0 auto;
 	padding: 0 15px;
 }
+
+[class*='__custom-container'] {
+	position: relative;
+	max-width: 1130px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
 //</ОСНОВНАЯ СЕТКА>=============================================
 
 //<ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>===============
@@ -126,6 +133,7 @@ body._lock {
 @import './parts/hero';
 @import './parts/services';
 @import './parts/about';
+@import './parts/advantages';
 //===========MAIN===============================================
 @import 'footer';
 //</ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>==============
