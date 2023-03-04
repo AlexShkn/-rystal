@@ -110,7 +110,6 @@ body._lock {
 	max-width: $maxWidthContainer + px;
 	margin: 0 auto;
 	padding: 0 15px;
-	grid-template-columns: repeat(4, 1fr);
 }
 
 [class*='__inner-container'] {
@@ -153,6 +152,7 @@ body._lock {
 @import './parts/works';
 @import './parts/messenger';
 @import './parts/reviews';
+@import './parts/news';
 //===========MAIN===============================================
 @import 'footer';
 //</ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>==============

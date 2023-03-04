@@ -43,6 +43,8 @@
 }
 
 .reviews-slide {
+	height: auto;
+
 	// display: flex;
 	// justify-content: center;
 	// .reviews-slide__body
@@ -50,10 +52,13 @@
 	&__body {
 		display: flex;
 		flex-direction: column;
+		align-items: flex-start;
 		width: 100%;
 		background: #ffffff;
 		border-radius: 30px;
 		padding-right: 50px;
+		height: 100%;
+
 		@include adaptiveValue('padding-top', 38, 12, 1);
 		@include adaptiveValue('padding-bottom', 50, 30, 1);
 		@include adaptiveValue('padding-left', 50, 20, 1);
@@ -111,7 +116,6 @@
 	&__work-type {
 		display: inline-block;
 		@include adaptiveValue('margin-bottom', 40, 12, 1);
-		@include adaptiveValue('max-width', 230, 130, 1);
 		padding: 7px 25px;
 		white-space: nowrap;
 		font-family: 'Open Sans';
@@ -122,9 +126,19 @@
 		border-radius: 8px;
 	}
 
+	// .reviews-slide__descr
+
+	&__descr {
+		display: flex;
+		flex-direction: column;
+		flex-grow: 1;
+		align-items: flex-start;
+	}
+
 	// .reviews-slide__text
 
 	&__text {
+		flex: 1 1 auto;
 		max-width: 325px;
 		@include adaptiveValue('margin-bottom', 30, 15, 1);
 		@include adaptiveValue('font-size', 16, 8, 1);

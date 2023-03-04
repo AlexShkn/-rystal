@@ -117,3 +117,48 @@ const reviewsSlider = new Swiper('.reviews-slider', {
 		},
 	},
 })
+
+const newsBulletStart = document.querySelector('[data-news-bullet-start]')
+const newsBulletMiddle = document.querySelector('[data-news-bullet-middle]')
+const newsBulletEnd = document.querySelector('[data-news-bullet-end]')
+
+const newsSlider = new Swiper('.news-slider', {
+	observer: true,
+	observeParents: true,
+	spaceBetween: 0,
+	slidesPerView: 3,
+
+	navigation: {
+		nextEl: '.news-slider-next',
+		prevEl: '.news-slider-prev',
+	},
+	breakpoints: {
+		320: {
+			slidesPerView: 1,
+		},
+		479: {
+			slidesPerView: 2,
+		},
+		768: {
+			slidesPerView: 3,
+		},
+	},
+	on: {
+		//Если слайд последний
+		reachEnd: () => {
+			newsBulletEnd.classList.add('_active')
+			newsBulletMiddle.classList.remove('_active')
+		},
+		//Если слайд первый
+		reachBeginning: () => {
+			newsBulletStart.classList.add('_active')
+			newsBulletMiddle.classList.remove('_active')
+		},
+		// Если не начальная и не конечная позиция
+		fromEdge: () => {
+			newsBulletStart.classList.remove('_active')
+			newsBulletEnd.classList.remove('_active')
+			newsBulletMiddle.classList.add('_active')
+		},
+	},
+})
