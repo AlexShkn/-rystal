@@ -1,6 +1,7 @@
 .faq {
 	@include adaptiveValue('padding-top', 95, 40, 1);
 	@include adaptiveValue('padding-bottom', 78, 50, 1);
+	background-color: var(--color-section-gray);
 
 	// .faq__content
 

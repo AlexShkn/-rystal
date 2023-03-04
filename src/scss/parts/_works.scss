@@ -1,0 +1,127 @@
+.works {
+	position: relative;
+	background-color: #fff;
+	@include adaptiveValue('padding-top', 128, 35, 1);
+	@include adaptiveValue('padding-bottom', 107, 35, 1);
+
+	// .works__slider
+
+	&__slider {
+		position: relative;
+		background: #ffffff;
+		@include adaptiveValue('padding-right', 50, 30, 1);
+		@include adaptiveValue('padding-left', 50, 30, 1);
+		@media (max-width: $mobileSmall) {
+			padding: 0;
+		}
+	}
+
+	// .works__title
+
+	&__title {
+		@include adaptiveValue('margin-bottom', 54, 25, 1);
+	}
+
+	// .works__wrapper
+
+	&__wrapper {
+		position: relative;
+	}
+
+	// .works__pagination
+
+	&__pagination {
+		width: 100%;
+		text-align: center;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		@include adaptiveValue('gap', 21, 10, 1);
+	}
+}
+
+.works-wrapper {
+	display: inline-flex;
+	align-items: flex-end;
+	@include adaptiveValue('max-height', 486, 218, 1);
+}
+
+.works-slider {
+}
+
+.works-slide {
+	padding: 5px 5px;
+
+	// .works-slide__img
+
+	&__img {
+		height: 486px;
+
+		img {
+			border-radius: 7px;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+}
+
+.works-slider-buttons {
+	@media (max-width: $mobile) {
+		// display: none;
+	}
+}
+
+.works-slider-btn {
+	svg.icon {
+		width: 27px;
+		@include adaptiveValue('height', 50, 15, 1);
+	}
+	&::after {
+		display: none;
+	}
+}
+
+.works-slider-buttons .swiper-button-next {
+	right: -44px;
+	top: 40%;
+
+	@media (max-width: $mobileSmall) {
+		top: 100%;
+		right: 100px;
+	}
+}
+.works-slider-buttons .swiper-button-prev {
+	left: -44px;
+	top: 40%;
+	transform: rotate(180deg);
+
+	@media (max-width: $mobileSmall) {
+		top: 100%;
+		left: 100px;
+	}
+}
+
+.works__pagination {
+	@include adaptiveValue('margin-top', 75, 40, 1);
+}
+
+.works-pagination__bullet {
+	background-color: #027795;
+	border-radius: 50%;
+	&:nth-child(1) {
+		@include adaptiveValue('width', 18, 5, 1);
+		@include adaptiveValue('height', 18, 5, 1);
+	}
+	&:nth-child(2) {
+		@include adaptiveValue('width', 17, 4, 1);
+		@include adaptiveValue('height', 17, 4, 1);
+	}
+	&:nth-child(3) {
+		@include adaptiveValue('width', 16, 3, 1);
+		@include adaptiveValue('height', 16, 3, 1);
+	}
+	&._active {
+		background-color: #015f77;
+	}
+}
