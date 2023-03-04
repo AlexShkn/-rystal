@@ -131,7 +131,10 @@ body._lock {
 	margin: 0 auto;
 	padding: 0 15px;
 	@media (max-width: $mobile) {
-		max-width: 650px;
+		@include adaptiveValue('max-width', 600, 320, 1);
+	}
+	@media (max-width: $mobileSmall) {
+		@include adaptiveValue('max-width', 450, 320, 1);
 	}
 }
 //</ОСНОВНАЯ СЕТКА>=============================================

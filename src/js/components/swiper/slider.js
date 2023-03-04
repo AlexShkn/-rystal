@@ -1,14 +1,8 @@
-const portfolioSlider = new Swiper('.clients-slider', {
+const clientsSlider = new Swiper('.clients-slider', {
 	observer: true,
 	observeParents: true,
 	spaceBetween: 70,
 	slidesPerView: 'auto',
-	// autoplay: {
-	// 	delay: 3000,
-	// 	disableOnInteraction: false,
-	// },
-
-	// Navigation arrows
 	navigation: {
 		nextEl: '.clients-slider-next',
 		prevEl: '.clients-slider-prev',
