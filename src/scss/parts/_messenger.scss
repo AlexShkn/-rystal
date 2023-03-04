@@ -1,0 +1,105 @@
+.messenger {
+	display: flex;
+	background: url('@img/whatsapp-full.jpg') center / cover no-repeat;
+	justify-content: flex-end;
+	@media (max-width: $mobile) {
+		flex-direction: column;
+		justify-content: center;
+		background: #171717;
+	}
+
+	// .messenger__image
+
+	&__image {
+		opacity: 0;
+		visibility: hidden;
+		@media (max-width: $mobile) {
+			opacity: 1;
+			visibility: visible;
+			background-image: url('@img/whatsapp.jpg');
+			background-repeat: no-repeat;
+			width: 100%;
+			min-height: 245px;
+		}
+	}
+
+	// .messenger__content
+
+	&__content {
+		display: flex;
+		@include adaptiveValue('padding-top', 135, 10, 1);
+		@include adaptiveValue('padding-bottom', 129, 37, 1);
+		padding-right: 40px;
+		min-width: 50%;
+		@media (max-width: $mobile) {
+			display: flex;
+			justify-content: center;
+			width: 100%;
+			padding-right: 15px;
+			padding-left: 15px;
+		}
+	}
+
+	// .messenger__content-wrapper
+
+	&__content-wrapper {
+		display: flex;
+		flex-direction: column;
+		max-width: 560px;
+	}
+
+	// .messenger__title
+
+	&__title {
+		@include adaptiveValue('margin-bottom', 43, 25, 1);
+		font-weight: 900;
+		@include adaptiveValue('font-size', 44, 24, 1);
+		line-height: math.div(55, 44);
+		color: #00aad6;
+		span {
+			@include adaptiveValue('font-size', 40, 24, 1);
+			line-height: math.div(55, 40);
+			color: #ffffff;
+		}
+	}
+
+	// .messenger__text
+
+	&__text {
+		@include adaptiveValue('margin-bottom', 55, 10, 1);
+		@include adaptiveValue('font-size', 24, 15, 1);
+		max-width: 481px;
+		line-height: math.div(30, 24);
+		color: #757575;
+	}
+
+	// .messenger__buttons
+
+	&__buttons {
+		display: flex;
+		gap: 31px;
+		@media (max-width: $mobile) {
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
+			gap: 10px;
+		}
+	}
+
+	// .messenger__button
+
+	&__button {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		white-space: nowrap;
+		background: #ffffff;
+		border-radius: 8px;
+		padding: 11px 53px;
+		@include adaptiveValue('max-width', 254, 161, 1);
+		font-weight: 700;
+		@include adaptiveValue('font-size', 18, 15, 1);
+		line-height: math.div(21, 18);
+		color: #2f3131;
+	}
+}
