@@ -54,7 +54,7 @@
 	// .clients-slide__img
 
 	&__img {
-		@include adaptiveValue('max-width', 360, 150, 1);
+		@include adaptiveValue('max-width', 360, 100, 1);
 
 		img {
 			width: 100%;

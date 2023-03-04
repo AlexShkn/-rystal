@@ -17,7 +17,6 @@
 	text-align: center;
 	font-family: 'Open Sans';
 	text-transform: uppercase;
-	font-style: normal;
 	font-weight: 800;
 	@include adaptiveValue('font-size', 48, 23, 1);
 	line-height: math.div(65, 48);
