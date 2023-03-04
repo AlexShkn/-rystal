@@ -26,7 +26,7 @@ $mainColor: #2f3131;
 
 $minWidth: 320px;
 $maxWidth: 1920;
-$maxWidthContainer: 1586;
+$maxWidthContainer: 1716;
 $containerPadding: 15;
 
 $pc: ($maxWidthContainer + $containerPadding) + px;
@@ -152,6 +152,7 @@ body._lock {
 @import './parts/faq';
 @import './parts/works';
 @import './parts/messenger';
+@import './parts/reviews';
 //===========MAIN===============================================
 @import 'footer';
 //</ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>==============
