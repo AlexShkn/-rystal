@@ -141,7 +141,7 @@
 
 	&__link {
 		text-align: center;
-		background: #f9ba32;
+		background-color: var(--color-accent);
 		@include adaptiveValue('padding-top', 28, 10, 1);
 		@include adaptiveValue('padding-right', 125, 57, 1);
 		@include adaptiveValue('padding-left', 125, 57, 1);
