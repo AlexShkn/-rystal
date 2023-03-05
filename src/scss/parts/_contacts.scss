@@ -160,17 +160,26 @@
 	// .contacts-social__link
 
 	&__link {
-		display: inline-flex;
-		align-items: center;
+		position: relative;
 		background: #f9ba32;
 		border-radius: 8px;
-		padding: 13px 50px;
+		transition: background-color 0.3s ease 0s;
+		@media (any-hover: hover) {
+			&:hover {
+				background-color: #ffcc34;
+			}
+		}
 		a {
-			margin-left: 14px;
+			display: inline-flex;
+			align-items: center;
+			padding: 13px 50px;
 			font-family: 'Open Sans';
 			font-weight: 700;
 			@include adaptiveValue('font-size', 18, 10, 1);
 			color: #000000;
+			span {
+				margin-left: 14px;
+			}
 		}
 		svg.icon {
 			@include adaptiveValue('width', 22, 10, 1);
